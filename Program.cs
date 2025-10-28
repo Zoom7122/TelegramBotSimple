@@ -27,7 +27,7 @@ namespace SimpleBot
 
         public static void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("8229878509:AAFpBA2K4xoQz6tj-GOfc78eBIl3y0WmUs0"));
+            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("Token"));
             services.AddHostedService<Bot>();
             services.AddTransient<TextMessageController>();
             services.AddTransient<InlineKeyboardController>();
